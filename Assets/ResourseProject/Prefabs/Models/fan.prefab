@@ -93,11 +93,21 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4e1cb1260e2ef564594c134c645cba27, type: 2}
+    - target: {fileID: 5906365261789455472, guid: c2b5fb366a16cda49a4c2b3856db0509,
+        type: 3}
+      propertyPath: m_Name
+      value: ButtonPower
+      objectReference: {fileID: 0}
     - target: {fileID: 8528746150226474757, guid: c2b5fb366a16cda49a4c2b3856db0509,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4e1cb1260e2ef564594c134c645cba27, type: 2}
+    - target: {fileID: 8946750654652011534, guid: c2b5fb366a16cda49a4c2b3856db0509,
+        type: 3}
+      propertyPath: m_Name
+      value: ButtonRotation
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
