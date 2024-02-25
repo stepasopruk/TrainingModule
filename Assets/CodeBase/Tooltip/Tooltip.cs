@@ -1,8 +1,7 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.EventSystems;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class Tooltip : IDisposable
 {
@@ -30,7 +29,6 @@ public class Tooltip : IDisposable
         {
             tooltipTrigger.OnPointerEnter -= Display;
             tooltipTrigger.OnPointerExit -= Hide;
-            tooltipTrigger.Dispose();
         }
     }
 
@@ -40,13 +38,10 @@ public class Tooltip : IDisposable
     private void Hide() =>
         OnHide?.Invoke();
 
-    private class EventTriggerListener : IDisposable
+    private class EventTriggerListener
     {
         public event Action<TooltipDescription> OnPointerEnter;
         public event Action OnPointerExit;
-
-        EventTrigger.Entry _pointerEnterTrigger = new EventTrigger.Entry();
-        EventTrigger.Entry _pointerExitTrigger = new EventTrigger.Entry();
 
         private EventTrigger _eventTrigger;
         private TooltipDescription _tooltipDescription;
@@ -62,17 +57,11 @@ public class Tooltip : IDisposable
 
         private void AddEventTriggerListener(EventTrigger eventTrigger, EventTriggerType eventType, Action<BaseEventData> callback)
         {
-            EventTrigger.Entry entry = new EventTrigger.Entry();
+            Entry entry = new Entry();
             entry.eventID = eventType;
-            entry.callback = new EventTrigger.TriggerEvent();
+            entry.callback = new TriggerEvent();
             entry.callback.AddListener(new UnityEngine.Events.UnityAction<BaseEventData>(callback));
             eventTrigger.triggers.Add(entry);
-        }
-
-        public void Dispose()
-        {
-            _pointerEnterTrigger.callback.RemoveListener(PointerEnter);
-            _pointerExitTrigger.callback.RemoveListener(PointerExit);
         }
 
         private void PointerEnter(BaseEventData eventData) =>

@@ -11,9 +11,7 @@ public class TooltipView : MonoBehaviour
     private RectTransform _rectTransform;
     public RectTransform RectTransform => _rectTransform;
 
-    private void Awake()
-    {
+    private void Awake() => 
         _rectTransform = GetComponent<RectTransform>();
-    }
 
 }
