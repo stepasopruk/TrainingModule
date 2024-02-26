@@ -24,10 +24,10 @@ public class Tooltip : IDisposable
 
     public void Dispose()
     {
-        foreach (var tooltipTrigger in _triggerListeners)
+        foreach (TooltipEventTrigger triggerListener in _triggerListeners)
         {
-            tooltipTrigger.OnPointerEnter -= Display;
-            tooltipTrigger.OnPointerExit -= Hide;
+            triggerListener.OnPointerEnter -= Display;
+            triggerListener.OnPointerExit -= Hide;
         }
     }
 
