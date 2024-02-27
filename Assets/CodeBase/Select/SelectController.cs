@@ -1,11 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
-public class SelectController : MonoBehaviour
+public class SelectController
 {
+    public event Action<GameObject> OnSelected;
+    
     private Select _select;
-    private Detail _currentDetail;
 
     public SelectController(Select select)
     {
@@ -13,18 +13,6 @@ public class SelectController : MonoBehaviour
         _select.OnSelected += Select_OnSelected;
     }
 
-    private void Select_OnSelected(Detail detail)
-    {
-        if (detail.IsSelect)
-        {
-            detail.IsSelect = false;
-            return;
-        }
-
-        if(_currentDetail != null)
-            _currentDetail.IsSelect = false;
-
-        _currentDetail = detail;
-        detail.IsSelect = true;
-    }
+    private void Select_OnSelected(GameObject gameObject) => 
+        OnSelected?.Invoke(gameObject);
 }

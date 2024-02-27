@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Select : IDisposable
 {
-    public event Action<Detail> OnSelected;
+    public event Action<GameObject> OnSelected;
 
     private readonly List<SelectEventTrigger> _triggerListeners;
 
@@ -21,7 +21,7 @@ public class Select : IDisposable
     }
 
     private void Selected(GameObject gameObject) =>
-        OnSelected?.Invoke(gameObject.GetComponent<Detail>());
+        OnSelected?.Invoke(gameObject);
 
     public void Dispose()
     {
