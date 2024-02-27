@@ -21,7 +21,7 @@ public class Select : IDisposable
     }
 
     private void Selected(GameObject gameObject) =>
-        OnSelected?.Invoke(gameObject.AddComponent<Detail>());
+        OnSelected?.Invoke(gameObject.GetComponent<Detail>());
 
     public void Dispose()
     {
