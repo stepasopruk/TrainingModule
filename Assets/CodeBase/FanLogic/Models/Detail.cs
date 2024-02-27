@@ -11,7 +11,7 @@ public class Detail : MonoBehaviour
         set
         {
             _isSelect = value;
-            
+
             gameObject.layer = value ? 
                 LayerMask.NameToLayer("Select") :
                 LayerMask.NameToLayer("Default");

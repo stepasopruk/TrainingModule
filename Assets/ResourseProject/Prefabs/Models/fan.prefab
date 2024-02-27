@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7177210666412961574}
   - component: {fileID: 2397893147967387470}
   - component: {fileID: 5035673992128782565}
+  - component: {fileID: 8166014169965693699}
   m_Layer: 0
   m_Name: ButtonPower
   m_TagString: Untagged
@@ -136,6 +137,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatorController: {fileID: 3683647757810931246}
+--- !u!114 &8166014169965693699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098876682798906540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb462b9e2085f248a5233f0b30b9e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1253434498438909785
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,6 +162,7 @@ GameObject:
   - component: {fileID: 8892245144426350798}
   - component: {fileID: 2729215891992620946}
   - component: {fileID: 755697235627233496}
+  - component: {fileID: 5709867968949563204}
   m_Layer: 0
   m_Name: hinge
   m_TagString: Untagged
@@ -259,6 +273,18 @@ MonoBehaviour:
   description: "\u043F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u044B
     \u0434\u043B\u044F \u043F\u043E\u0432\u043E\u0440\u043E\u0442\u043D\u044B\u0445
     \u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0439"
+--- !u!114 &5709867968949563204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253434498438909785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb462b9e2085f248a5233f0b30b9e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1527525413859632561
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +299,7 @@ GameObject:
   - component: {fileID: 4201398439131488599}
   - component: {fileID: 4888517958446737756}
   - component: {fileID: 6618784356854641776}
+  - component: {fileID: 8604283376825691454}
   m_Layer: 0
   m_Name: ButtonRotation
   m_TagString: Untagged
@@ -395,6 +422,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatorController: {fileID: 3683647757810931246}
+--- !u!114 &8604283376825691454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527525413859632561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb462b9e2085f248a5233f0b30b9e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1931489051803627800
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +447,7 @@ GameObject:
   - component: {fileID: 3313010097117126357}
   - component: {fileID: 2584518856875974188}
   - component: {fileID: 543729683893507350}
+  - component: {fileID: 772002894345907928}
   m_Layer: 0
   m_Name: handle
   m_TagString: Untagged
@@ -518,6 +558,18 @@ MonoBehaviour:
   description: "\u041F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D
     \u0434\u043B\u044F \u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F
     \u043F\u043E\u0432\u043E\u0440\u043E\u0442\u0430"
+--- !u!114 &772002894345907928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931489051803627800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb462b9e2085f248a5233f0b30b9e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2075281360441828418
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +583,7 @@ GameObject:
   - component: {fileID: 2371225540773115480}
   - component: {fileID: 4309414126018676458}
   - component: {fileID: 6460053437329095301}
+  - component: {fileID: 297629794892513326}
   m_Layer: 0
   m_Name: footing
   m_TagString: Untagged
@@ -641,6 +694,18 @@ MonoBehaviour:
   description: "\u041E\u0441\u043D\u043E\u0432\u0430\u043D\u0438\u0435 \u0432\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u0430,
     \u043D\u0430 \u043A\u043E\u0442\u043E\u0440\u043E\u043C \u0434\u0435\u0440\u0436\u0438\u0442\u0441\u044F
     \u0432\u0441\u044F \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u044F"
+--- !u!114 &297629794892513326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075281360441828418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb462b9e2085f248a5233f0b30b9e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7093288618831257865
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,6 +771,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3905979261865801089}
   - component: {fileID: 3683647757810931246}
+  - component: {fileID: 6714269878677013759}
   m_Layer: 0
   m_Name: fan
   m_TagString: Untagged
@@ -747,6 +813,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 4028556085376093772}
+--- !u!114 &6714269878677013759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7245023688137753358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7432e70e9d7b07f46826295bcc06b3cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8574745969180206461
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,6 +838,7 @@ GameObject:
   - component: {fileID: 53090571718748923}
   - component: {fileID: 2821979053239380548}
   - component: {fileID: 3736110873508970937}
+  - component: {fileID: 7788134615900179447}
   m_Layer: 0
   m_Name: blades
   m_TagString: Untagged
@@ -873,6 +952,18 @@ MonoBehaviour:
     \u0438 \u0432\u044B\u0442\u0430\u043B\u043A\u0438\u0432\u0430\u043D\u0438\u044F
     \u0432\u043E\u0437\u0434\u0443\u0445\u0430 \u0432 \u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0451\u043D\u043D\u043E\u043C
     \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0438"
+--- !u!114 &7788134615900179447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8574745969180206461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb462b9e2085f248a5233f0b30b9e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9159192944314403868
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,6 +977,7 @@ GameObject:
   - component: {fileID: 326391662396834648}
   - component: {fileID: 2425498294805785913}
   - component: {fileID: 1266222951373380793}
+  - component: {fileID: 6380645195557304869}
   m_Layer: 0
   m_Name: body
   m_TagString: Untagged
@@ -997,3 +1089,15 @@ MonoBehaviour:
     \u0434\u043B\u044F \u043A\u0440\u0435\u043F\u043B\u0435\u043D\u0438\u044F \u044D\u043B\u0435\u043A\u0442\u0440\u043E\u043F\u0440\u0438\u0432\u043E\u0434\u0430
     (\u044D\u043B\u0435\u043A\u0442\u0440\u043E\u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043B\u044F)
     \u0438 \u043B\u043E\u043F\u0430\u0441\u0442\u0435\u0439 \u043A\u0440\u044B\u043B\u044C\u0447\u0430\u0442\u043A\u0438"
+--- !u!114 &6380645195557304869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9159192944314403868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb462b9e2085f248a5233f0b30b9e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

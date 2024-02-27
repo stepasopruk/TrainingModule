@@ -7,11 +7,9 @@ public class DetailSelectController : MonoBehaviour
 
     public void Selected(GameObject gameObject)
     {
-        _detail ??= gameObject.GetComponent<Detail>();
-
-        if (_detail == null)
-            return;
-
+        if(gameObject.TryGetComponent(out _detail))
+                if (_detail == null)
+                    return;
 
         if (_detail.IsSelect)
         {
@@ -19,10 +17,10 @@ public class DetailSelectController : MonoBehaviour
             return;
         }
 
-        if (_prevDetail != null)
+        if (_prevDetail != null && _prevDetail != _detail)
             _prevDetail.IsSelect = false;
 
+        _detail.IsSelect = true;
         _prevDetail = _detail;
-        _prevDetail.IsSelect = true;
     }
 }
